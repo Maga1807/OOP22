@@ -1,11 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
+public class Person {
+    private String name;
+    private String address;
+    
+    public Person() {}
+    
+    public Person(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public String getAddress() {
+        return address;
+    }
+    
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public String toString() {
+        return "Name: " + name + " Address: " + address; 
+    }
+    
+}
